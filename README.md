@@ -1,6 +1,6 @@
-# Magisk Noto Sans JP
+# Magisk RobotoSourceHanSans
 
-英数字はRoboto、2バイト文字はNoto Sans JPにシステムレベルで変更するモジュールです。
+合成フォントのRobotoSourceHanSansにシステムレベルで変更するモジュールです。
 
 すごくざっくり言うとAndroPlus氏のモジュールを改変した物です。
 
