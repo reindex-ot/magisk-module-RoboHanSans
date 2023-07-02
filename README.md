@@ -10,6 +10,11 @@
 
 * 最新のMagiskでの使用を推奨します。Magiskからのインストールに失敗をした場合はリカバリーからインストールを行なってください。
 
+## モジュールで使用されているフォントの紹介
+[こちら](https://github.com/reindex-ot/RobotoSourceHanSans)でRobotoと源ノ角ゴシックの合成フォント「Roboto + 源ノ角ゴシック」を公開しています。
+
+ゴシック体のバランスやUIでの可読性を重視した合成フォントになります。
+
 ## License
 
 - This module is licensed under [WTFPL](http://www.wtfpl.net/).
