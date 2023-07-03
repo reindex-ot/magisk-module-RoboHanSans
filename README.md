@@ -1,4 +1,4 @@
-# Magisk RobotoSourceHanSans
+# Magisk RoboHanSans
 
 合成フォントのRoboto + 源ノ角ゴシックにシステムレベルで変更するモジュールです。
 
