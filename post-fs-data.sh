@@ -23,16 +23,16 @@ add_ja() {
 	if [ -e $MODDIR/system/fonts/disable-extra-weights ] ; then
 		if [ $APILEVEL -ge 31 ] ; then
 			#Android 12 and later
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Bold.ttf</font>\n        <font weight="300" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Bold.ttf</font>\n        <font weight="300" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		else
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal">RobotoSourceHanSans-Bold.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">RobotoSourceHanSans-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="300" style="normal">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal">RoboHanSans-Bold.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">RoboHanSans-Bold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		fi
 	else
 		if [ $APILEVEL -ge 31 ] ; then
 			#Android 12 and later
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="RobotoSourceHanSans-Regular">RobotoSourceHanSans-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="RobotoSourceHanSans-Regular">NotoSansJP-ExtraBold.ttf</font>\n        <font weight="100" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">RobotoSourceHanSans-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="RobotoSourceHanSans-Regular" fallbackFor="serif">NotoSansJP-ExtraBold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="RoboHanSans-Regular">RoboHanSans-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="RoboHanSans-Regular">NotoSansJP-ExtraBold.ttf</font>\n        <font weight="100" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Thin.ttf</font>\n        <font weight="300" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" postScriptName="NotoSansCJKjp-Regular" fallbackFor="serif">RoboHanSans-Bold.ttf</font>\n        <font weight="800" style="normal" postScriptName="RoboHanSans-Regular" fallbackFor="serif">NotoSansJP-ExtraBold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		else
-			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal">RobotoSourceHanSans-Thin.ttf</font>\n        <font weight="300" style="normal">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal">RobotoSourceHanSans-Bold.ttf</font>\n        <font weight="800" style="normal">NotoSansJP-ExtraBold.ttf</font>\n        <font weight="100" style="normal" fallbackFor="serif">NotoSansJP-hin.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">RobotoSourceHanSans-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">RobotoSourceHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">RobotoSourceHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">RobotoSourceHanSans-Bold.ttf</font>\n        <font weight="800" style="normal" fallbackFor="serif">NotoSansJP-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
+			sed -i 's@<family lang="zh-Hans">@<family lang="ja">\n        <font weight="100" style="normal">RoboHanSans-Thin.ttf</font>\n        <font weight="300" style="normal">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal">RoboHanSans-Bold.ttf</font>\n        <font weight="800" style="normal">NotoSansJP-ExtraBold.ttf</font>\n        <font weight="100" style="normal" fallbackFor="serif">NotoSansJP-hin.ttf</font>\n        <font weight="300" style="normal" fallbackFor="serif">RoboHanSans-Light.ttf</font>\n        <font weight="400" style="normal" fallbackFor="serif">RoboHanSans-Regular.ttf</font>\n        <font weight="600" style="normal" fallbackFor="serif">RoboHanSans-Medium.ttf</font>\n        <font weight="700" style="normal" fallbackFor="serif">RoboHanSans-Bold.ttf</font>\n        <font weight="800" style="normal" fallbackFor="serif">NotoSansJP-Extrabold.ttf</font>\n    </family>\n    <family lang="zh-Hans">@g' $1
 		fi
 	fi
 }
@@ -85,8 +85,8 @@ if [ -e /system/fonts/MiSansVF_Overlay.ttf ]; then
 fi
 
 #Goodbye, vivo Font
-sed -i 's@VivoFont.ttf@RobotoSourceHanSans-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
-sed -i 's@DroidSansFallbackBBK.ttf@RobotoSourceHanSans-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
+sed -i 's@VivoFont.ttf@RoboHanSans-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
+sed -i 's@DroidSansFallbackBBK.ttf@RoboHanSans-Regular.ttf@g' $MODDIR/system/etc/fonts.xml
 if [ -e /system/fonts/HYQiHei-50.ttf ]; then
 cp /system/fonts/Roboto-Regular.ttf $MODDIR/system/fonts/HYQiHei-50.ttf
 fi
@@ -112,13 +112,13 @@ if [ -e /system/etc/$opslate ]; then
 	remove_ja $MODDIR/system/etc/$opslate
 	add_ja $MODDIR/system/etc/$opslate
 
-	sed -i 's@SlateForOnePlus-Thin.ttf@RobotoSourceHanSans-Light.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Light.ttf@RobotoSourceHanSans-Light.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Book.ttf@RobotoSourceHanSans-Regular.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Regular.ttf@RobotoSourceHanSans-Regular.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Medium.ttf@RobotoSourceHanSans-Medium.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Bold.ttf@RobotoSourceHanSans-Bold.ttf@g' $MODDIR/system/etc/$opslate
-	sed -i 's@SlateForOnePlus-Black.ttf@RobotoSourceHanSans-Black.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Thin.ttf@RoboHanSans-Light.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Light.ttf@RoboHanSans-Light.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Book.ttf@RoboHanSans-Regular.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Regular.ttf@RoboHanSans-Regular.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Medium.ttf@RoboHanSans-Medium.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Bold.ttf@RoboHanSans-Bold.ttf@g' $MODDIR/system/etc/$opslate
+	sed -i 's@SlateForOnePlus-Black.ttf@RoboHanSans-Black.ttf@g' $MODDIR/system/etc/$opslate
 fi
 
 #Copy fonts_base.xml for OnePlus OxygenOS 11
@@ -150,26 +150,26 @@ fi
 oos12c=fonts_customization.xml
 if [ -e /system/system_ext/etc/$oos12c ]; then
     cp /system/system_ext/etc/$oos12c $MODDIR/system/system_ext/etc
-	sed -i 's@OplusSansText-25Th@RobotoSourceHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-35ExLt@RobotoSourceHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-45Lt@RobotoSourceHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-55Rg@RobotoSourceHanSans-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansText-65Md@RobotoSourceHanSans-Medium@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@NHGMYHOplusHK-W4@RobotoSourceHanSans-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@NHGMYHOplusPRC-W4@RobotoSourceHanSans-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
-	sed -i 's@OplusSansDisplay-45Lt@RobotoSourceHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-25Th@RoboHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-35ExLt@RoboHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-45Lt@RoboHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-55Rg@RoboHanSans-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansText-65Md@RoboHanSans-Medium@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@NHGMYHOplusHK-W4@RoboHanSans-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@NHGMYHOplusPRC-W4@RoboHanSans-Regular@g' $MODDIR/system/system_ext/etc/$oos12c
+	sed -i 's@OplusSansDisplay-45Lt@RoboHanSans-Light@g' $MODDIR/system/system_ext/etc/$oos12c
 fi
 
 #Copy fonts_customization.xml for OnePlus OxygenOS 12+
 oos12p=fonts_customization.xml
 if [ -e /system/product/etc/$oos12p ]; then
     cp /system/product/etc/$oos12p $MODDIR/system/product/etc
-	sed -i 's@OplusSansText-25Th@RobotoSourceHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-35ExLt@RobotoSourceHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-45Lt@RobotoSourceHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-55Rg@RobotoSourceHanSans-Regular@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansText-65Md@RobotoSourceHanSans-Medium@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@NHGMYHOplusHK-W4@RobotoSourceHanSans-Regular@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@NHGMYHOplusPRC-W4@RobotoSourceHanSans-Regular@g' $MODDIR/system/product/etc/$oos12p
-	sed -i 's@OplusSansDisplay-45Lt@RobotoSourceHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-25Th@RoboHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-35ExLt@RoboHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-45Lt@RoboHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-55Rg@RoboHanSans-Regular@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansText-65Md@RoboHanSans-Medium@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@NHGMYHOplusHK-W4@RoboHanSans-Regular@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@NHGMYHOplusPRC-W4@RoboHanSans-Regular@g' $MODDIR/system/product/etc/$oos12p
+	sed -i 's@OplusSansDisplay-45Lt@RoboHanSans-Light@g' $MODDIR/system/product/etc/$oos12p
 fi

@@ -1,6 +1,6 @@
-id=font-SourceHanSans
-name=RobotoSourceHanSans
+id=font-RoboHanSans
+name=RoboHanSans
 version=v1
 versionCode=1
 author=Re*Index.(ot_inc)
-description=RobotoSourceHanSansにシステムフォントを置き換えます。
+description=RoboHanSansにシステムフォントを置き換えます。
