@@ -1,6 +1,6 @@
 # Magisk RoboHanSans
 
-合成フォントのRoboto + 源ノ角ゴシックにシステムレベルで変更するモジュールです。
+Roboto + 源ノ角ゴシック合成フォント、RoboHanSansにシステムレベルで変更するモジュールです。
 
 すごくざっくり言うとAndroPlus氏のモジュールを改変した物です。
 
